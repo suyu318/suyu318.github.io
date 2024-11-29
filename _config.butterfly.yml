@@ -1,0 +1,321 @@
+menu:
+  首页: / || fas fa-home
+  文章: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
+
+# 主题颜色
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+
+# 网站背景
+background:
+  url: /img/bg.jpg
+  background-attachment: fixed
+  opacity: 0.9
+
+# 网站图标设置
+favicon: /img/favicon.png
+
+# 网站头像
+avatar:
+  img: /img/avatar.png
+  effect: true
+
+# 搜索系统
+search:
+  path: search.xml
+  field: post
+  content: true
+
+# 评论系统
+comments:
+  use: # 暂时注释掉 Waline
+  text: true
+  lazyload: true
+  count: true
+  card_post_count: true
+
+# 注释掉整个 Waline 配置块
+# waline:
+#   pageview: true
+#   option:
+#     serverURL: # Waline server address url
+#     visitor: true
+#     dark: auto
+#     emoji:
+#       - https://unpkg.com/@waline/emojis@1.1.0/weibo
+#       - https://unpkg.com/@waline/emojis@1.1.0/alus
+#       - https://unpkg.com/@waline/emojis@1.1.0/bilibili
+#     requiredMeta: ['nick','mail']
+#     reaction: true
+
+# 文章目录
+toc:
+  enable: true
+  number: true
+
+# 代码高亮主题
+highlight_theme: mac light
+
+# 网站信息
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+    loop: true
+    showCursor: true
+    startDelay: 300
+    backSpeed: 50
+    typeSpeed: 150
+    strings:
+      - 记录生活，记录成长
+      - 分享技术，分享生活
+      
+# 页面加载动画
+preloader: true
+
+social:
+  fab fa-github: https://github.com/suyu318/suyu318.github.io || Github || '#24292e'
+  fas fa-envelope: mailto:你的邮箱 || Email || '#4a7dbe'
+  fab fa-weibo: https://weibo.com/你的微博 || 微博 || '#E6162D'
+
+# 文章封面
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+
+# 鼠标点击效果
+fireworks:
+  enable: true
+  zIndex: 9999
+  mobile: false
+
+# 网站运行时间统计
+runtimeshow:
+  enable: true
+  publish_date: 2024/11/29 00:00:00
+
+# 页面美化
+beautify:
+  enable: true
+  field: post # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: "#F47466"
+
+# 文章页面相关配置
+post_meta:
+  page:
+    date_type: both # created or updated or both
+    categories: true
+    tags: true
+    label: true
+    top_img: true
+
+# 文章相关配置
+post:
+  # 文章版权
+  copyright:
+    enable: true
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+  # 文章打赏
+  reward:
+    enable: true
+    QR_code:
+      - img: /img/wechat.jpg
+        link:
+        text: 微信
+      - img: /img/alipay.jpg
+        link:
+        text: 支付宝
+
+  # 文章目录
+  toc:
+    enable: true
+    number: true
+    style_simple: false
+    expand: true
+    max_depth: 6
+
+  # 相关文章推荐
+  related_post:
+    enable: true
+    limit: 6 # 显示推荐文章数目
+    date_type: created # or updated
+
+# 侧边栏设置
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 这是一个描述
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/你的github用户名
+
+  card_announcement:
+    enable: true
+    content: 这是公告内容
+
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date # date or updated
+    sort_order: # Don't modify the setting unless you know how it works
+
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none # none/true/false
+    sort_order: # Don't modify the setting unless you know how it works
+
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+    sort_order: # Don't modify the setting unless you know how it works
+
+# 页脚设置
+footer:
+  owner:
+    enable: true
+    since: 2024
+  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">备案号</a>
+  copyright: true
+
+# 网站访问统计
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 图片懒加载
+lazyload:
+  enable: true
+  loading_img: /img/loading.gif
+
+# 搜索系统配置
+local_search:
+  enable: true
+  preload: false
+  top_n_per_article: 1
+  unescape: false
+  CDN:
+
+# 数学公式支持
+katex:
+  enable: true
+  per_page: false
+  hide_scrollbar: true
+
+# 代码块设置
+highlight_copy: true  # 复制按钮
+highlight_lang: true  # 显示代码语言
+highlight_shrink: false # 代码框不展开
+highlight_height_limit: false # 代码框高度限制
+
+# 图片预览设置
+fancybox: true
+
+# 阅读模式
+readmode: true
+
+# 黑暗模式
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+# 页面顶部图配置
+default_top_img: /img/default_top.jpg  # 默认顶部图
+index_img: /img/index.jpg  # 主页顶部图
+archive_img: /img/archive.jpg  # 归档页面顶部图
+tag_img: /img/tag.jpg  # 标签页面顶部图
+tag_per_img: /img/tag_per.jpg  # 标签子页面顶部图
+category_img: /img/category.jpg  # 分类页面顶部图
+category_per_img: /img/category_per.jpg  # 分类子页面顶部图
+about_img: /img/about.jpg  # 关于页面顶部图
+link_img: /img/link.jpg  # 友链页面顶部图
+
+# 页面配置
+page:
+  top_img: true # 是否显示页面顶部图
+
+# CDN 设置
+CDN:
+  # The CDN provider, [local/jsdelivr/unpkg/cdnjs/custom]
+  provider: jsdelivr
+  # The prefix of CDN, when provider is set to custom
+  # prefix: https://cdn.example.com
+  # The version of CDN, latest or specific version
+  version: latest
+
+# 图片 CDN 配置
+img_cdn: https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@main/source/img/
+
+# Open Graph meta tags
+Open_Graph_meta: true
+
+# SEO Setting
+seo:
+  enable: true
+  title: auto
+  description: auto
+  keywords: auto
+  author: auto
+  og_type: website
+  og_title: auto
+  og_url: auto
+  og_image: auto
+  og_description: auto
+  og_site_name: auto
+  canonical: auto
+
+# Robots.txt
+robotstxt:
+  useragent: '*'
+  disallow:
+    - /js/
+    - /css/
+  allow:
+    - /
+  sitemap: /sitemap.xml
+
+# Share System
+addThis:
+  enable: false
+  pubid: # 你的 AddThis pub-id
+
+# Share.js
+sharejs:
+  enable: true
+  sites: wechat,weibo,qq,facebook,twitter
+
+# 文章分享设置
+post_share:
+  enable: true
+  sites: wechat,weibo,qq # 可选的分享站点
+  img: /img/qrcode.png # 微信分享二维码图片
